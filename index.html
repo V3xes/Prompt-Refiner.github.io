@@ -12,29 +12,31 @@
       <h1>🚀 AI Idea Refiner</h1>
       <label class="theme-toggle">
         <input type="checkbox" id="themeToggle">
-        <span class="slider"></span> 🌙/☀️
+        <span class="slider"></span>
+        <span class="emoji">🌙/☀️</span>
       </label>
     </header>
 
-    <p class="subtitle">Transform your raw AI idea into a clear, powerful prompt</p>
+    <p class="subtitle">Refine raw AI ideas into detailed, usable prompts — ready for ChatGPT, Claude, etc.</p>
 
     <textarea id="ideaInput" placeholder="🧠 Describe your AI idea here... (1–2 sentences)"></textarea>
 
     <div class="buttons">
-      <button onclick="refineIdea()" class="btn primary">Refine My Idea</button>
+      <button onclick="refineIdea()" class="btn primary">✨ Refine My Idea</button>
       <button onclick="regenerate()" class="btn secondary">🔁 Regenerate</button>
       <button onclick="moveToInput()" class="btn secondary">✍️ Refine Prompt</button>
     </div>
 
     <div id="outputContainer" class="output hidden">
-      <h2>✨ Refined AI Prompt:</h2>
+      <h2>💡 Refined AI Concept:</h2>
       <div id="refinedOutput" class="output-box"></div>
-      <button onclick="copyOutput()" class="btn copy">📋 Copy</button>
+      <button onclick="copyOutput()" class="btn copy">📋 Copy to Clipboard</button>
     </div>
 
-    <footer>Made for GitHub Pages ❤️</footer>
+    <footer>
+      <p>Made for GitHub Pages ❤️ | No APIs required</p>
+    </footer>
   </div>
-  
   <script src="app.js"></script>
 </body>
 </html>
