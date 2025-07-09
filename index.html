@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Idea Refiner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🚀 AI Idea Refiner</h1>
+      <label class="theme-toggle">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span> 🌙/☀️
+      </label>
+    </header>
+
+    <p class="subtitle">Transform your raw AI idea into a clear, powerful prompt</p>
+
+    <textarea id="ideaInput" placeholder="🧠 Describe your AI idea here... (1–2 sentences)"></textarea>
+
+    <div class="buttons">
+      <button onclick="refineIdea()" class="btn primary">Refine My Idea</button>
+      <button onclick="regenerate()" class="btn secondary">🔁 Regenerate</button>
+      <button onclick="moveToInput()" class="btn secondary">✍️ Refine Prompt</button>
+    </div>
+
+    <div id="outputContainer" class="output hidden">
+      <h2>✨ Refined AI Prompt:</h2>
+      <div id="refinedOutput" class="output-box"></div>
+      <button onclick="copyOutput()" class="btn copy">📋 Copy</button>
+    </div>
+
+    <footer>Made for GitHub Pages ❤️</footer>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
